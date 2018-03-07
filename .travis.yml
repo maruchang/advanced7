@@ -6,6 +6,5 @@ install:
 script: 
   - coverage run test_rpn.py
   - coverage report -m
-  - nosetests --with-coverage --cover-package=app --cov-report term-missing
 after_success:
   - coveralls
